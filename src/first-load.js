@@ -36,4 +36,13 @@ function loadp(){
     };
 };
 
-export{loadh1, loadimg, loadp};
+function home(){
+    while (content.firstChild) {
+    content.removeChild(content.firstChild);
+  };
+    loadh1();
+    loadimg();
+    loadp();
+}
+
+export{home, loadh1,loadimg};
