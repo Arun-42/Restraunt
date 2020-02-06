@@ -48,4 +48,22 @@ function home() {
   loadp();
 }
 
-export { home, loadh1, loadimg };
+function adjust_size() {
+  if (window.innerWidth < 1000) {
+    Array.from(document.getElementsByTagName("img")).forEach(item => {
+      item.style.width = "90%";
+    });
+    Array.from(document.getElementsByTagName("p")).forEach(item => {
+      item.style.width = "90%";
+    });
+  } else {
+    Array.from(document.getElementsByTagName("img")).forEach(item => {
+      item.style.width = "50%";
+    });
+    Array.from(document.getElementsByTagName("p")).forEach(item => {
+      item.style.width = "60%";
+    });
+  }
+}
+
+export { home, loadh1, loadimg, adjust_size };
