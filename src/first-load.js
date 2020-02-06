@@ -56,6 +56,12 @@ function adjust_size() {
     Array.from(document.getElementsByTagName("p")).forEach(item => {
       item.style.width = "90%";
     });
+    document
+      .querySelectorAll(".menuButtons")
+      .forEach(item => (item.style.width = "26%"));
+    document
+      .querySelectorAll(".menuButtons")
+      .forEach(item => (item.style.padding = "20px"));
   } else {
     Array.from(document.getElementsByTagName("img")).forEach(item => {
       item.style.width = "50%";
@@ -63,6 +69,12 @@ function adjust_size() {
     Array.from(document.getElementsByTagName("p")).forEach(item => {
       item.style.width = "60%";
     });
+    document
+      .querySelectorAll(".menuButtons")
+      .forEach(item => (item.style.width = "60px"));
+    document
+      .querySelectorAll(".menuButtons")
+      .forEach(item => (item.style.padding = "10px"));
   }
 }
 
